@@ -1,22 +1,16 @@
 import _ from 'lodash'
-import './assets/381504.jpg'
 import './style/style.css'
+import contactPage from './contactPage'
+import footer from './footer'
+import renderNav from './navBar'
+import header from './header'
+import contentPrvaStr from './opisPrvaStr'
 
-import LandingPage from './landingPage'
-
-init()
-
-function addEventListeners() {
-  const homeBtn = document.getElementsByClassName('home')
-  const menuBtn = document.getElementsByClassName('menu')
-  const About = document.getElementsByClassName('aboutUs')
-
-  homeBtn.addEventListener('click', LandingPage)
-  menuBtn.addEventListener('click', menu)
-  About.addEventListener('click', aboutUs)
+const renderHome = () => {
+  header()
+  renderNav()
+  contentPrvaStr()
+  footer()
 }
 
-function init() {
-  LandingPage()
-  addEventListeners()
-}
+renderHome()

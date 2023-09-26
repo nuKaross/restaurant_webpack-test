@@ -140,6 +140,39 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/contactPage.js":
+/*!****************************!*\
+  !*** ./src/contactPage.js ***!
+  \****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst contact = (adresa, mobitel, src) => {\n  const contacts = document.createElement('div')\n  form.classList.add('contactsList')\n  const adr = document.createElement('h3')\n  adresa.textContent = adresa\n  contacts.appendChild(adr)\n\n  const mob = document.createElement('h3')\n  mobitel.textContent = mobitel\n  contacts.appendChild(mobitel)\n\n  const radnoVr = document.createElement('img')\n  radnoVr.setAttribute('id', 'radnoVr')\n  radnoVr.setAttribute('src', src)\n  contacts.appendChild(radnoVr)\n  return contact\n}\n\nconst createContacts = () => {\n  const content = document.getElementsByClassName('content')\n  content.textContent = ''\n  const contacts = contact('Mate Lovraka 24', '0921030128', './assets/Radno.jpg')\n  contacts.classList.add('contactsContainer')\n  content.appendChild(contact)\n  return content\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createContacts);\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/contactPage.js?");
+
+/***/ }),
+
+/***/ "./src/footer.js":
+/*!***********************!*\
+  !*** ./src/footer.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction footer() {\n  const footer = document.createElement('footer')\n  footer.setAttribute('id', 'footer')\n  const h3 = document.createElement('h3')\n  h3.textContent = 'Ovo je jebacki futer'\n  footer.appendChild(h3)\n  return footer\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (footer);\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/footer.js?");
+
+/***/ }),
+
+/***/ "./src/header.js":
+/*!***********************!*\
+  !*** ./src/header.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst header = () => {\n  const header = document.createElement('header')\n  header.classList.add('header')\n  const name = document.createElement('h1')\n  name.textContent = 'PIZZERIA EX'\n  header.appendChild(name)\n\n  return header\n}\n\n\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (header);\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/header.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
@@ -147,18 +180,29 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _assets_381504_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/381504.jpg */ \"./src/assets/381504.jpg\");\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style/style.css */ \"./src/style/style.css\");\n/* harmony import */ var _landingPage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./landingPage */ \"./src/landingPage.js\");\n\n\n\n\n\n\ninit()\n\nfunction addEventListeners() {\n  const homeBtn = document.getElementsByClassName('home')\n  const menuBtn = document.getElementsByClassName('menu')\n  const About = document.getElementsByClassName('aboutUs')\n\n  homeBtn.addEventListener('click', _landingPage__WEBPACK_IMPORTED_MODULE_3__[\"default\"])\n  menuBtn.addEventListener('click', menu)\n  About.addEventListener('click', aboutUs)\n}\n\nfunction init() {\n  (0,_landingPage__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()\n  addEventListeners()\n}\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _style_style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style/style.css */ \"./src/style/style.css\");\n/* harmony import */ var _contactPage__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contactPage */ \"./src/contactPage.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ \"./src/footer.js\");\n/* harmony import */ var _navBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./navBar */ \"./src/navBar.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./header */ \"./src/header.js\");\n/* harmony import */ var _opisPrvaStr__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./opisPrvaStr */ \"./src/opisPrvaStr.js\");\n\n\n\n\n\n\n\n\nconst renderHome = () => {\n  (0,_header__WEBPACK_IMPORTED_MODULE_5__[\"default\"])()\n  ;(0,_navBar__WEBPACK_IMPORTED_MODULE_4__[\"default\"])()\n  ;(0,_opisPrvaStr__WEBPACK_IMPORTED_MODULE_6__[\"default\"])()\n  ;(0,_footer__WEBPACK_IMPORTED_MODULE_3__[\"default\"])()\n}\n\nrenderHome()\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/index.js?");
 
 /***/ }),
 
-/***/ "./src/landingPage.js":
+/***/ "./src/navBar.js":
+/*!***********************!*\
+  !*** ./src/navBar.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//navigation bar with custom text\n\nconst renderNav = () => {\n  const nav = document.createElement('nav')\n  nav.classList.add('navBar')\n  const navItem1 = document.createElement('div')\n  navItem1.textContent = 'HOME'\n  navItem1.classList.add('home')\n  const navItem2 = document.createElement('div')\n  navItem2.textContent = 'MENU'\n  navItem2.classList.add('menu')\n  const navItem3 = document.createElement('div')\n  navItem3.textContent = 'CONTACTS'\n  navItem3.classList.add('contacts')\n\n  nav.appendChild(navItem1)\n  nav.appendChild(navItem2)\n  nav.appendChild(navItem3)\n  return nav\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderNav);\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/navBar.js?");
+
+/***/ }),
+
+/***/ "./src/opisPrvaStr.js":
 /*!****************************!*\
-  !*** ./src/landingPage.js ***!
+  !*** ./src/opisPrvaStr.js ***!
   \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n//landing page header\nconst createHeader = (text, src) => {\n  const header = document.createElement('header')\n  header.classList.add('header')\n  const logo = document.createElement('img')\n  logo.classList.add('logo')\n  logo.setAttribute('src', src)\n  const name = document.createElement('h1')\n  name.textContent = text\n  header.appendChild(logo)\n  header.appendChild(name)\n\n  return header\n}\n\n//navigation bar with custom text\nconst createNav = (text1, text2, text3) => {\n  const nav = document.createElement('nav')\n  nav.classList.add('navBar')\n  const navItem1 = document.createElement('div')\n  navItem1.textContent = text1\n  navItem1.classList.add('home')\n  const navItem2 = document.createElement('div')\n  navItem2.textContent = text2\n  navItem2.classList.add('menu')\n  const navItem3 = document.createElement('div')\n  navItem3.textContent = text3\n  navItem3.classList.add('about')\n\n  nav.appendChild(navItem1)\n  nav.appendChild(navItem2)\n  nav.appendChild(navItem3)\n  return nav\n}\n\nconst createAboutUs = text => {\n  const about = document.createElement('div')\n  const aboutUs = document.createElement('h2')\n  aboutUs.textContent = text\n  aboutUs.classList.add('aboutUs')\n  about.classList.add('aboutdiv')\n  about.appendChild(aboutUs)\n  return about\n}\n\nfunction createFooter(id, text) {\n  const footer = document.createElement('footer')\n  footer.setAttribute('id', id)\n  const h3 = document.createElement('h3')\n  h3.textContent = text\n  footer.appendChild(h3)\n  return footer\n}\n\nconst LandingPage = () => {\n  const content = document.getElementById('content')\n  content.classList.add('landingPage')\n\n  content.textContent = ''\n\n  const header = createHeader('Pizzeria EX', './assets/logo.jpg')\n  const nav = createNav('Home', 'Menu', 'Contact')\n  const aboutUs = createAboutUs(\n    'Pizzerija EX nalazi se u centru Srdoča i već sedamnaest godina pruža ugostiteljske usluge. Osim standardnih napitaka i pića, ovdje se nude razne vrste pašta, pizze i jednostavna mesna jela po iznimno povoljnim cijenama.'\n  )\n  const footer = createFooter('footer', 'Footercina ogromna')\n\n  content.appendChild(header)\n  content.appendChild(nav)\n  content.appendChild(aboutUs)\n  content.appendChild(footer)\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LandingPage);\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/landingPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst contentPrvaStr = () => {\n  const about = document.createElement('div')\n  const aboutUs = document.createElement('h2')\n  aboutUs.textContent =\n    'Pizzerija EX nalazi se u centru Srdoča i već sedamnaest godina pruža ugostiteljske usluge. Osim standardnih napitaka i pića, ovdje se nude razne vrste pašta, pizze i jednostavna mesna jela po iznimno povoljnim cijenama.'\n  aboutUs.classList.add('aboutUs')\n  about.classList.add('aboutdiv')\n  about.appendChild(aboutUs)\n  return about\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (contentPrvaStr);\n\n\n//# sourceURL=webpack://Restaurant-webpack-test/./src/opisPrvaStr.js?");
 
 /***/ }),
 
